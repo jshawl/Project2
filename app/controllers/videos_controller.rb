@@ -10,6 +10,9 @@ class VideosController < ApplicationController
         else
           @videos = Video.all.order('created_at DESC').paginate(page: params[:page], per_page: 6)
         end
+	# Excellent search implementation!!
+	# I recommend moving this logic to a model method so you can do things like
+	# Video.search(params[:search])
     else
       @videos =Video.all.paginate(page: params[:page], per_page: 6)
     end
@@ -31,6 +34,7 @@ class VideosController < ApplicationController
 
     @video = current_user.videos.build(video_params)
     @video.update(date_created: Time.now.strftime("%B %d, %Y") )
+    # you can also call .merge here to add the current user
 
     redirect_to (video_path(@video))
 

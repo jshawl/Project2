@@ -3,6 +3,10 @@ body{
 margin-left: 50px;
 margin-right: 50px;
 background-image: url("http://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2013/7/19/1374225896482/Brick-wall-bricks-and-mor-008.jpg");
+/*
+ * Remember to download assets in case the above link breaks.
+ * also, could use background-size: cover; to have full height and width bg image.
+ * */
 color:white;
 }
 
@@ -75,7 +79,7 @@ a:link, a:visited {
 
 .fixed-nav-bar li {
 
-  display:inline-flex;
+  display:inline-flex; /* Awesome flexbox!! */
   font-size: 0.6em;
 
 
@@ -89,3 +93,9 @@ a:link, a:visited {
 .headsup{
   text-align: right;
 }
+
+/* Your CSS looks good! 
+ * Remember to remove commented out code and fix white space as you go.
+ * This will make your code easier to read and consequently easier to
+ * debug.
+ * */

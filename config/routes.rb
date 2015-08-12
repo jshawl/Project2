@@ -22,9 +22,11 @@ Rails.application.routes.draw do
   # get "comments/:id/edit" => "comments#edit"
   # put "comments/:id" => "comments#update"
   # delete "comments/:id" => "comments#destroy"
+  # please remove commented out code in the future
 
   root to: 'videos#index'
     get '/comments', to: 'comments#index'
+    # ^^ you could also use shallow nesting to dry up this code - http://edgeguides.rubyonrails.org/routing.html
 
     resources :videos do
       resources :comments

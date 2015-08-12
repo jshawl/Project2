@@ -26,3 +26,5 @@ video7 = Video.create(subject:"Chris Tucker", link_url:"https://www.youtube.com/
 video8 = Video.create(subject:"Louis ck", link_url:"https://www.youtube.com/embed/2sIhvXV32gQ", author:"AnandM", date_created:"August 05, 2015", likes:67)
 video9 = Video.create(subject:"Jim Gaffigan", link_url:"https://www.youtube.com/embed/vWZ3LLILccY", author:"AnandM", date_created:"August 05, 2015", likes:67)
 comment1 = Comment.create(text_body:"Video 1 looks good, yay!", author:"Mr.Utube", date_created:"2015", video:video1 )
+
+# Excellent seeds!!!
